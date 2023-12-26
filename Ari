@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class NewClass1 {
+
+    public static void main(String[] args) {
+        // Definir las materias
+        String[] materias = {"Calculo", "Matematicas", "Fundamentos de programacion", "Fundamentos de investigacion", "Quimica", "Desarrollo sustentable"};
+
+        // Inicializar la matriz para almacenar calificaciones
+        double[][] calificaciones = new double[5][6]; // 5 unidades y 6 materias
+
+        // Crear un objeto Scanner para la entrada de usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Pedir al usuario que ingrese las calificaciones por unidad para cada materia
+        for (int i = 0; i < 5; i++) {  // 5 unidades
+            for (int j = 0; j < 6; j++) {  // 6 materias
+                System.out.print("Ingrese la calificacion de " + materias[j] + " en la unidad " + (i + 1) + ": ");
+                calificaciones[i][j] = scanner.nextDouble();
+                
+            }
+        }
+
+        // Mostrar las calificaciones ingresadas
+        System.out.println("\nCalificaciones ingresadas:");
+        for (int i = 0; i < 6; i++) {
+            System.out.println("\n" + materias[i] + ":");
+            for (int j = 0; j < 5; j++) {
+                System.out.println("  Unidad " + (j + 1) + ": " + calificaciones[j][i]);
+            }
+        }
+    }
+}
