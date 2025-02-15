@@ -1,3 +1,3 @@
-# **Hola yo soy kevin, nhfbfo se quien seas tu**
-Soy estudiante actualmente, no se utilizar esta plataforma pero parece divertida
+# **Hola yo soy kevin con qu, q, cu**
+ayuda 911
 ## :D
